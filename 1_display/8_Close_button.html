@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close button</title>
+    <style>
+        .button {
+            /* Reset */
+            background-color: transparent;
+            border-color: transparent;
+
+            /* Cursor */
+            cursor: pointer;
+
+            /* Size */
+            height: 32px;
+
+            /* Used to position the inner */
+            position: relative;
+        }
+
+        .button__line {
+            /* Background color */
+            background-color: rgba(0, 0, 0, 0.3);
+
+            /* Position */
+            position: absolute;
+
+            /* Size */
+            height: 1px;
+            width: 100%;
+        }
+
+        .button__line--first {
+            /* Position */
+            left: 0px;
+            top: 100%;
+        }
+
+        .button__line--second {
+            /* Position */
+            left: 50%;
+            top: 0px;
+            transform: translate(-50%, 0%) rotate(45deg);
+
+            /* Size */
+            height: 100%;
+            width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">
+        <div class="button__line button__line--first">
+
+            <div class="button__line button__line--second"></div>
+        </div>
+    </button>
+</body>
+</html>

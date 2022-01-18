@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow buttons</title>
+    <style>
+        .button {
+            /* center the content */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            /* Spacing */
+            padding: 8px;
+        }
+
+        .button__arrow {
+            /* Transparent background */
+            background-color: transparent;
+
+            /* Size */
+            height: 12px;
+            width: 12px;
+        }
+
+        .button__arrow--up {
+            /* Edges */
+            border-left: 1px solid rgba(0,0,0,0.3);
+            border-top: 1px solid rgba(0,0,0,0.3);
+            transform: translateY(25%) rotate(45deg);
+        }
+
+        .button__arrow--right {
+            /* Edges */
+            border-right: 1px solid rgba(0,0,0,0.3);
+            border-top: 1px solid rgba(0,0,0,0.3);
+            transform: translateX(-25%) rotate(45deg);
+        }
+
+        .button_arrow--down {
+            /* Edges */
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+            border-left: 1px solid rgba(0,0,0,0.3);
+            transform: translate(25%) rotate(45deg);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Up arrow button -->
+    <button class="button">
+        <!-- Arrow -->
+        <div class="button__arrow button__arrow--up"></div>
+
+        <!-- Content -->
+        ...
+    </button>
+
+    <!-- Right arrow button -->
+    <button class="button">
+        <!-- Content -->
+        ...
+
+        <!-- Arrow -->
+        <div class="button__arrow button_arrow--right"></div>
+    </button>
+
+    <!-- Down arrow button -->
+    <button class="button">
+        <!-- Arrow -->
+        <div class="button__arrow button__arrow--down"></div>
+
+        <!-- Content -->
+        ... 
+    </button>
+
+    <!-- Left arrow button -->
+    <button class="button">
+        <!-- Arrow -->
+        <div class="button__arrow button__arrow--left"></div>
+
+        <!-- Content -->
+        ... 
+    </button>
+</body>
+</html>

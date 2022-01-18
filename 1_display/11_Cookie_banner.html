@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie banner</title>
+    <style>
+        .banner {
+            /* banner is displayed at the bottom */
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            width: 100px;
+
+            /* Center the content */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .banner__content {
+            /* Take available width */
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <!-- Tells visitors that the website uses cookie -->
+    <div class="banner__content">
+        ...
+    </div>
+
+    <!-- Close button -->
+    ...
+</div>
+</body>
+</html>
